@@ -16,18 +16,20 @@ pip install -r requirements.txt
 python main.py
 ```
 ## Routes
+#### /api/v1/people/
 ```
-/api/v1/people/
+GET 
 ```
-#### GET 
 Returns all people
-#### POST 
+```
+POST 
+```
 Creates person.
 Example: /api/v1/people/ {"iin": "760724300757"}
 
+#### /api/v1/people/<iin>
 ```
-/api/v1/people/<iin>
+GET
 ```
-#### GET 
 Returns person by iin.
 Example: /api/v1/people/760724300757
