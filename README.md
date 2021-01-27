@@ -22,12 +22,12 @@ python main.py
 #### GET 
 Returns all people
 #### POST 
-Creates person
+Creates person.
 Example: /api/v1/people/ {"iin": "760724300757"}
 
 ```
 /api/v1/people/<iin>
 ```
 #### GET 
-Returns person by iin
+Returns person by iin.
 Example: /api/v1/people/760724300757
