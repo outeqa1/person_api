@@ -28,7 +28,7 @@ def people_route():
         return {'error': 'Not valid request.'}, 400
 
 
-@app.route('/api/v1//people/<iin>/', methods=['GET'])
+@app.route('/api/v1/people/<iin>/', methods=['GET'])
 def get_person(iin):
     for person in people:
         if iin == person.iin:
