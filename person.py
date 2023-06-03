@@ -6,7 +6,7 @@ class Person:
         self.iin = iin
         self.age = calculations.calculate_age(iin)
 
-    def get_json(self):
+    def get_json_1(self):
         return {
             "iin": self.iin,
             "age": self.age

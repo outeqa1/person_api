@@ -1,35 +1,47 @@
 # person_api
-This project is created as test exercise for ТОО Biometric
+
+This project is created as test exercise for ТОО Biometric<br>
+Description:
+This app can calculate the appropriate age by IIN and save data in JSON format.
 
 ## Installation
 
-Copy this project on your local machine 
+Copy this project on your local machine
+
 ```
 git clone https://github.com/outeqa1/person_api/
 ```
+
 Install libraries
+
 ```
 pip install -r requirements.txt
 ```
+
 ## Run app
+
 ```
 python main.py
 ```
-## Routes
-#### /api/v1/people/
-```
-GET 
-```
-Returns all people
-```
-POST 
-```
-Creates person.
-Example: /api/v1/people/ {"iin": "760724300757"}
 
-#### /api/v1/people/<iin>
+## Routes
+
+#### Create person.
+
+Example (with POST method):
+
 ```
-GET
+/api/v1/people/951010741253
 ```
-Returns person by iin.
-Example: /api/v1/people/760724300757
+
+#### Returns all peoples with valid IIN (with GET method):
+
+```
+/api/v1/people/
+```
+
+#### Returns only one person by iin (with GET method):
+
+```
+/api/v1/people/<iin>
+```
